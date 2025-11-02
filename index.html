@@ -1609,7 +1609,7 @@
     </div>
   </footer>
 
-  <script>
+   <script>
     const defaultConfig = {
       hero_title: "Where to next?",
       hero_cta: "Find Trips",
@@ -1635,7 +1635,7 @@
         mapToCapabilities: () => ({ recolorables: [], borderables: [] }),
         mapToEditPanelValues: (config) => new Map([
           ["hero_title", config.hero_title || defaultConfig.hero_title],
-          ["hero_cta", config.hero_ || defaultConfig.hero_cta],
+          ["hero_cta", config.hero_cta || defaultConfig.hero_cta],
           ["seasonal_title", config.seasonal_title || defaultConfig.seasonal_title],
           ["testimonial_title", config.testimonial_title || defaultConfig.testimonial_title],
           ["final_cta_title", config.final_cta_title || defaultConfig.final_cta_title],
@@ -1669,7 +1669,7 @@
       romance: { title: 'Romance & Relaxation', desc: 'Create unforgettable moments with your loved one', activities: ['🌹 Couples Spa', '🍷 Wine Tasting', '🌅 Sunset Cruises'] },
       luxury: { title: 'Luxury Escapes', desc: 'Indulge in world-class experiences', activities: ['🏰 Private Villas', '🍾 Fine Dining', '🚁 Helicopter Tours'] },
       solo: { title: 'Solo Adventures', desc: 'Discover yourself while exploring the world', activities: ['🎒 Backpacking', '📸 Photography Tours', '🧘 Yoga Retreats'] },
-      family: { title: 'Family Fun', desc: 'Create memories that last a lifetime', activities: ['🎢 Theme Parks', '🏖️ Beach Resorts', '🦒 Wildlife Safaris'] }
+      family: { title: 'Family Fun', desc: 'Create memories that last a lifetime', activities: ['🎢 Theme Parks', '🏖 Beach Resorts', '🦒 Wildlife Safaris'] }
     };
 
     document.querySelectorAll('.theme-btn').forEach(btn => {
@@ -1685,7 +1685,7 @@
           <h3 style="font-size: 36px; margin-bottom: 1rem; color: var(--aqua);">${data.title}</h3>
           <p style="font-size: 18px; color: var(--text-muted); margin-bottom: 2rem;">${data.desc}</p>
           <div class="cards-grid">
-            ${data.activities.map(activity => `<div><p style="font-weight: 600; color: var(--text-light);">${activity}</p></div>`).join('')}
+            ${data.activities.map(activity => <div><p style="font-weight: 600; color: var(--text-light);">${activity}</p></div>).join('')}
           </div>
         `;
       });
@@ -1694,4 +1694,27 @@
     function updateCountdowns() {
       document.querySelectorAll('.countdown').forEach(timer => {
         const [h, m, s] = timer.textContent.split(':').map(Number);
-        le
+        let sec = s - 1;
+        let min = m;
+        let hour = h;
+        
+        if (sec < 0) { sec = 59; min--; }
+        if (min < 0) { min = 59; hour--; }
+        if (hour < 0) hour = 23;
+        
+        timer.textContent = ${String(hour).padStart(2, '0')}:${String(min).padStart(2, '0')}:${String(sec).padStart(2, '0')};
+      });
+    }
+
+    setInterval(updateCountdowns, 1000);
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
