@@ -20,7 +20,7 @@
       line-height: 1.6;
     }
 
-    /* ===== COLOR THEME ===== */
+    
     :root {
       --primary-blue: #0066cc;
       --aqua: #00d4ff;
@@ -34,7 +34,7 @@
       --text-muted: #a0c4d9;
     }
 
-    /* ===== ANIMATIONS ===== */
+ 
     @keyframes slideInDown {
       from {
         opacity: 0;
@@ -107,7 +107,7 @@
       }
     }
 
-    /* ===== NAVBAR ===== */
+    
     .sticky-nav {
       position: fixed;
       top: 0;
@@ -137,10 +137,10 @@
   letter-spacing: 2px;
   background: transparent !important;
   border: none !important;
-  box-shadow: none !important;        /* remove glowing box */
+  box-shadow: none !important;       
   display: inline-flex;
   align-items: center;
-  gap: 8px;                           /* space between emoji and text */
+  gap: 8px;                          
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -211,7 +211,7 @@
       background: rgba(0, 212, 255, 0.2);
     }
 
-    /* ===== PROGRESS BAR ===== */
+
     .progress-bar {
       position: fixed;
       top: 0;
@@ -222,7 +222,7 @@
       width: 0%;
       box-shadow: 0 0 20px rgba(0, 212, 255, 0.8);
     }
-/* ====== AI Travel Assistant ====== */
+
 .chat-input {
   margin-top: 1rem;
 }
@@ -244,7 +244,7 @@
   box-shadow: 0 0 20px rgba(10, 132, 255, 0.7);
 }
 
-/* Make chat field and button align nicely */
+
 .chat-field {
   flex: 1;
   padding: 0.8rem 1rem;
@@ -258,17 +258,17 @@
   color: rgba(255,255,255,0.5);
 }
 
-/* ====== Testimonials Section ====== */
+
 #testimonials .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem; /* space between columns */
+  gap: 2rem; 
   margin-top: 2rem;
 }
 
 #testimonials .glass-card {
   padding: 2rem;
-  margin: 1rem 0; /* top and bottom spacing between cards */
+  margin: 1rem 0; 
   border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -311,7 +311,7 @@
   color: #facc15;
 }
 
-    /* ===== HERO SECTION ===== */
+    
     .hero-section {
       position: relative;
       height: 100vh;
@@ -409,7 +409,7 @@
       box-shadow: 0 8px 20px rgba(0, 212, 255, 0.4);
     }
 
-    /* ===== DESTINATION CARDS ===== */
+    
     .section {
       padding: 60px 20px;
       max-width: 1200px;
@@ -487,7 +487,7 @@
       font-size: 16px;
     }
 
-    /* ===== EXPERIENCE CARDS ===== */
+    
     .glass-card {
       background: rgba(0, 212, 255, 0.08);
       backdrop-filter: blur(10px);
@@ -531,7 +531,7 @@
       border: 1px solid var(--aqua);
     }
 
-    /* ===== SEASONAL OFFERS ===== */
+    
     .seasonal-section {
       background: linear-gradient(135deg, rgba(0, 170, 136, 0.2) 0%, rgba(0, 102, 204, 0.2) 100%);
       padding: 60px 20px;
@@ -603,7 +603,7 @@
       box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4);
     }
 
-    /* ===== THEME SELECTOR ===== */
+    
     .theme-buttons {
       display: flex;
       justify-content: center;
@@ -636,7 +636,7 @@
       box-shadow: 0 6px 20px rgba(0, 212, 255, 0.3);
     }
 
-    /* ===== LIGHTBOX ===== */
+    
     .lightbox {
       display: none;
       position: fixed;
@@ -674,7 +674,7 @@
       color: var(--aqua);
     }
 
-    /* ===== GALLERY ===== */
+   
     .mosaic-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -701,7 +701,7 @@
       transform: scale(1.15) rotate(2deg);
     }
 
-    /* ===== LOYALTY PROGRAM ===== */
+   
     .loyalty-badge {
       width: 100px;
       height: 100px;
@@ -746,7 +746,7 @@
       transition: width 0.3s ease;
     }
 
-    /* ===== FOOTER ===== */
+    
     footer {
       background: linear-gradient(135deg, rgba(0, 26, 46, 0.95), rgba(0, 102, 204, 0.1));
       border-top: 1px solid rgba(0, 212, 255, 0.3);
@@ -792,7 +792,7 @@
       color: var(--text-muted);
     }
 
-    /* ===== CHART STYLES ===== */
+    
     .chart-container {
       background: rgba(0, 212, 255, 0.05);
       border: 1px solid rgba(0, 212, 255, 0.2);
@@ -820,7 +820,7 @@
   opacity: 0;
 }
 
-    /* ===== PACKAGE CARDS ===== */
+  
     .package-card {
       background: rgba(0, 212, 255, 0.05);
       border: 2px solid rgba(0, 212, 255, 0.3);
@@ -874,7 +874,7 @@
       border-bottom: 1px solid rgba(0, 212, 255, 0.1);
     }
 
-    /* ===== RESPONSIVE ===== */
+  
     @media (max-width: 768px) {
       .hero-title {
         font-size: 48px;
@@ -899,7 +899,7 @@
 <body>
   <div class="progress-bar" id="progressBar"></div>
 
-  <!-- NAVBAR -->
+  
   <nav class="sticky-nav">
     <div class="nav-container">
       <div class="logo">✈️ Wanderlust</div>
@@ -917,7 +917,7 @@
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
+ 
   <section class="hero-section">
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -936,7 +936,7 @@
     </div>
   </section>
 
-  <!-- POPULAR DESTINATIONS -->
+  
   <section class="section" id="destinations">
     <h2 class="section-title">Popular Destinations</h2>
     <div class="cards-grid">
@@ -964,8 +964,7 @@
     </div>
   </section>
 
-  <!-- TOP EXPERIENCES -->
-  <!-- TOP EXPERIENCES -->
+  
 <section class="section" id="experiences">
   <h2 class="section-title">Top Experiences</h2>
   
@@ -996,7 +995,7 @@
 </section>
 
 
-  <!-- SEASONAL OFFERS -->
+ 
   <section class="seasonal-section">
     <div class="seasonal-content">
       <h2 class="section-title" id="seasonalTitle">Seasonal Travel Deals</h2>
@@ -1033,7 +1032,6 @@
       <svg viewBox="0 0 1000 500" class="w-full h-full">
         <rect fill="rgba(0, 26, 46, 0.8)" width="1000" height="500" />
 
-        <!-- City Circles -->
         <circle cx="200" cy="150" r="8" fill="var(--aqua)" class="map-dot" data-location="Paris">
           <title>Paris - From $1,299</title>
         </circle>
@@ -1065,7 +1063,7 @@
   </div>
 </section>
 
-  <!-- TRAVEL MOODS -->
+ 
   <section class="section">
     <h2 class="section-title">Find Your Travel Mood</h2>
     <div class="theme-buttons">
@@ -1095,7 +1093,7 @@
     </div>
   </section>
 
-  <!-- CULTURAL HIGHLIGHTS -->
+  
   <section class="section">
     <h2 class="section-title">Cultural Highlights</h2>
     <div class="cards-grid">
@@ -1112,8 +1110,7 @@
     </div>
   </section>
 
-  <!-- <CHANGE> FEEL THE JOURNEY SECTION - Added from old file -->
-  <section style="padding: 60px 20px; position: relative; background: linear-gradient(135deg, rgba(0, 102, 204, 0.3) 0%, rgba(0, 170, 136, 0.2) 100%); overflow: hidden; text-align: center;">
+ <section style="padding: 60px 20px; position: relative; background: linear-gradient(135deg, rgba(0, 102, 204, 0.3) 0%, rgba(0, 170, 136, 0.2) 100%); overflow: hidden; text-align: center;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at top right, rgba(0, 212, 255, 0.1) 0%, transparent 60%);"></div>
     <div style="position: relative; z-1; max-width: 800px; margin: 0 auto;">
       <div class="glass-card" style="padding: 3rem; text-align: center;">
@@ -1125,7 +1122,7 @@
     </div>
   </section>
 
-  <!-- PHOTO GALLERY -->
+ 
   <section class="section">
     <h2 class="section-title">Travel Gallery</h2>
     <div class="mosaic-grid">
@@ -1139,13 +1136,13 @@
   </section>
 
 
-  <!-- LIGHTBOX -->
+ 
   <div class="lightbox" id="lightbox">
     <button class="close-lightbox" onclick="closeLightbox()">×</button>
     <img id="lightboxImage" alt="Gallery image" style="max-width: 90%; max-height: 90%; border-radius: 10px;">
   </div>
 
-  <!-- BUILD YOUR TRIP -->
+  
   <section class="section" id="plan">
     <h2 class="section-title">Build Your Perfect Trip</h2>
     <div class="glass-card">
@@ -1194,8 +1191,7 @@
     </div>
   </section>
 
-  <!-- <CHANGE> BEST TIME TO BOOK SECTION - Added from old file -->
-  <section class="section">
+ <section class="section">
     <h2 class="section-title">Best Time to Book</h2>
     <div class="chart-container">
       <h3 style="font-size: 24px; color: var(--aqua); margin-bottom: 1.5rem;">Average Prices to Bali Throughout the Year</h3>
@@ -1221,8 +1217,7 @@
     </div>
   </section>
 
-  <!-- <CHANGE> PACKAGE COMPARISON SECTION - Added from old file -->
-  <section class="section">
+ <section class="section">
     <h2 class="section-title">Choose Your Package</h2>
     <div class="cards-grid">
       <div class="package-card">
@@ -1266,7 +1261,6 @@
     </div>
   </section>
 
-  <!-- LOYALTY PROGRAM -->
   <section class="section">
     <h2 class="section-title">Wanderlust Rewards</h2>
     <div class="glass-card">
@@ -1302,7 +1296,6 @@
     </div>
   </section>
 
-  <!-- <CHANGE> TRAVELERS' COMMUNITY SECTION - Added from old file -->
   <section class="section">
     <h2 class="section-title">Travelers' Community</h2>
     <div class="glass-card">
@@ -1346,7 +1339,7 @@
       </div>
     </div>
   </section>
-<!-- AI TRAVEL ASSISTANT -->
+
 <section class="section" id="ai-assistant">
   <h2 class="section-title">AI Travel Assistant</h2>
 
@@ -1385,7 +1378,7 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
+
 <section class="section" id="testimonials">
   <h2 class="section-title">What Travelers Say</h2>
 
@@ -1425,7 +1418,6 @@
   </div>
 </section>
 
-  <!-- <CHANGE> TRAVELER STORIES SECTION - Added from old file -->
   <section class="section">
     <h2 class="section-title">Traveler Stories</h2>
     <div style="display: grid; gap: 3rem;">
@@ -1448,7 +1440,6 @@
     </div>
   </section>
 
-  <!-- <CHANGE> TRAVEL GUIDES & TIPS SECTION - Added from old file -->
   <section class="section">
     <h2 class="section-title">Travel Guides & Tips</h2>
     <div class="cards-grid">
@@ -1473,8 +1464,7 @@
     </div>
   </section>
 
-  <!-- <CHANGE> PARTNER LOGOS SECTION - Added from old file -->
-  <section class="section">
+<section class="section">
     <h2 class="section-title" style="color: var(--text-muted); font-size: 24px;">Trusted Partners</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 2rem; align-items: center; opacity: 0.6; text-align: center;">
       <div style="font-size: 48px;">✈️</div>
@@ -1485,7 +1475,6 @@
     </div>
   </section>
 
-  <!-- <CHANGE> AWARDS & CERTIFICATIONS SECTION - Added from old file -->
   <section class="section">
     <h2 class="section-title">Awards & Recognition</h2>
     <div class="cards-grid">
@@ -1507,7 +1496,6 @@
     </div>
   </section>
 
-  <!-- <CHANGE> SAFETY & TRAVEL POLICY SECTION - Added from old file -->
   <section class="section">
     <h2 class="section-title">Your Safety Matters</h2>
     <div class="cards-grid">
@@ -1534,8 +1522,7 @@
     </div>
   </section>
 
-  <!-- <CHANGE> REFERRAL PROGRAM SECTION - Added from old file -->
-  <section style="padding: 60px 20px; text-align: center; background: linear-gradient(135deg, rgba(0, 102, 204, 0.2) 0%, rgba(0, 170, 136, 0.2) 100%);">
+ <section style="padding: 60px 20px; text-align: center; background: linear-gradient(135deg, rgba(0, 102, 204, 0.2) 0%, rgba(0, 170, 136, 0.2) 100%);">
     <div style="max-width: 800px; margin: 0 auto;">
       <h2 style="font-size: 48px; font-weight: 800; margin-bottom: 1rem; background: linear-gradient(135deg, var(--aqua), var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Share Your Journey, Earn Credits</h2>
       <p style="font-size: 20px; color: var(--text-muted); margin-bottom: 2rem;">Invite friends and get $50 credit for each booking. They get $50 too!</p>
@@ -1550,7 +1537,6 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
   <section class="section">
     <h2 class="section-title" id="testimonialTitle">What Travelers Say</h2>
     <div class="cards-grid">
@@ -1587,7 +1573,6 @@
     </div>
   </section>
 
-  <!-- FINAL CTA -->
   <section style="padding: 80px 20px; position: relative; background: linear-gradient(135deg, rgba(0, 102, 204, 0.3) 0%, rgba(0, 26, 46, 0.8) 100%), url('images/final-cta.jpg') center/cover;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(0, 26, 46, 0.3) 0%, rgba(0, 26, 46, 0.8) 100%);"></div>
     <div style="position: relative; z-index: 1; max-width: 800px; margin: 0 auto;">
@@ -1600,7 +1585,7 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+ 
   <footer>
     <div class="footer-grid">
       <div class="footer-section">
