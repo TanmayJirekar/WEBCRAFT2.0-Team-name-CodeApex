@@ -20,7 +20,7 @@
       line-height: 1.6;
     }
 
-    
+    /* ===== COLOR THEME ===== */
     :root {
       --primary-blue: #0066cc;
       --aqua: #00d4ff;
@@ -28,13 +28,13 @@
       --green: #00bb88;
       --light-green: #00dd99;
       --dark-bg: #001a2e;
-      --medium-bg: #003d5c;
-      --light-bg: #005f7a;
+      --medium-bg: #023148;
+      --light-bg: #0982a4;
       --text-light: #ffffff;
       --text-muted: #a0c4d9;
     }
 
- 
+    /* ===== ANIMATIONS ===== */
     @keyframes slideInDown {
       from {
         opacity: 0;
@@ -106,123 +106,7 @@
         transform: translateX(0);
       }
     }
-
-    
-    .sticky-nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      background: rgba(0, 26, 46, 0.95);
-      backdrop-filter: blur(10px);
-      border-bottom: 2px solid rgba(0, 212, 255, 0.3);
-      padding: 1rem 2rem;
-      animation: slideInDown 0.6s ease-out;
-    }
-
-    .nav-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-   .logo {
-  font-size: 28px;
-  font-weight: bold;
-  color: var(--aqua);
-  text-shadow: 0 0 12px rgba(0, 212, 255, 0.6);
-  animation: glow 3s infinite;
-  letter-spacing: 2px;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;       
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;                          
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-
-    .nav-links {
-      display: flex;
-      gap: 32px;
-      align-items: center;
-      list-style: none;
-    }
-
-    .nav-links a {
-      color: var(--text-light);
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-weight: 500;
-      position: relative;
-    }
-
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--aqua), var(--green));
-      transition: width 0.3s ease;
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-
-    .nav-links a:hover {
-      color: var(--aqua);
-    }
-
-    .login-btn {
-      padding: 10px 24px;
-      background: linear-gradient(135deg, var(--primary-blue), var(--dark-aqua));
-      border: none;
-      border-radius: 25px;
-      color: white;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
-    }
-
-    .login-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
-    }
-
-    .lang-select {
-      background: rgba(0, 212, 255, 0.1);
-      border: 1px solid var(--aqua);
-      color: var(--text-light);
-      padding: 8px 12px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .lang-select:hover {
-      background: rgba(0, 212, 255, 0.2);
-    }
-
-
-    .progress-bar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 4px;
-      background: linear-gradient(90deg, var(--aqua), var(--green), var(--primary-blue));
-      z-index: 9999;
-      width: 0%;
-      box-shadow: 0 0 20px rgba(0, 212, 255, 0.8);
-    }
-
+/* ====== AI Travel Assistant ====== */
 .chat-input {
   margin-top: 1rem;
 }
@@ -244,7 +128,7 @@
   box-shadow: 0 0 20px rgba(10, 132, 255, 0.7);
 }
 
-
+/* Make chat field and button align nicely */
 .chat-field {
   flex: 1;
   padding: 0.8rem 1rem;
@@ -258,17 +142,17 @@
   color: rgba(255,255,255,0.5);
 }
 
-
+/* ====== Testimonials Section ====== */
 #testimonials .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem; 
+  gap: 2rem; /* space between columns */
   margin-top: 2rem;
 }
 
 #testimonials .glass-card {
   padding: 2rem;
-  margin: 1rem 0; 
+  margin: 1rem 0; /* top and bottom spacing between cards */
   border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -311,7 +195,111 @@
   color: #facc15;
 }
 
-    
+    /* ===== NAVBAR ===== */
+    .sticky-nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(1, 16, 28, 0.95);
+      backdrop-filter: blur(10px);
+     
+      padding: 1rem 2rem;
+      animation: slideInDown 0.6s ease-out;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 35px;
+      font-weight: bold;
+      color: var(--aqua);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-light);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--aqua), var(--green));
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links a:hover {
+      color: var(--aqua);
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, var(--aqua), var(--green));
+      border: none;
+      border-radius: 40%;
+      color: #001a2e;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .login-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
+    }
+
+    .lang-select {
+      background: rgba(0, 212, 255, 0.1);
+      border: 1px solid var(--aqua);
+      color: var(--text-light);
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .lang-select:hover {
+      background: rgba(0, 212, 255, 0.2);
+    }
+
+    /* ===== PROGRESS BAR ===== */
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--aqua), var(--green), var(--primary-blue));
+      z-index: 9999;
+      width: 0%;
+      box-shadow: 0 0 20px rgba(0, 212, 255, 0.8);
+    }
+
+    /* ===== HERO SECTION ===== */
     .hero-section {
       position: relative;
       height: 100vh;
@@ -319,7 +307,7 @@
       align-items: center;
       justify-content: center;
       margin-top: 72px;
-      background: linear-gradient(180deg, rgba(0, 102, 204, 0.2) 0%, rgba(0, 26, 46, 0.8) 100%),
+      background: 
                   url('images/hero-bg.jpg') center/cover;
       overflow: hidden;
     }
@@ -346,7 +334,7 @@
       font-weight: 800;
       margin-bottom: 1.5rem;
       animation: float 4s ease-in-out infinite;
-      background: linear-gradient(135deg, var(--aqua), var(--light-green));
+      background: linear-gradient(135deg, var(--text-light), var(--aqua));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -355,7 +343,7 @@
 
     .hero-subtitle {
       font-size: 24px;
-      color: var(--text-muted);
+      color: white;
       margin-bottom: 3rem;
       animation: slideInUp 1s ease-out 0.2s backwards;
     }
@@ -409,7 +397,7 @@
       box-shadow: 0 8px 20px rgba(0, 212, 255, 0.4);
     }
 
-    
+    /* ===== DESTINATION CARDS ===== */
     .section {
       padding: 60px 20px;
       max-width: 1200px;
@@ -487,7 +475,7 @@
       font-size: 16px;
     }
 
-    
+    /* ===== EXPERIENCE CARDS ===== */
     .glass-card {
       background: rgba(0, 212, 255, 0.08);
       backdrop-filter: blur(10px);
@@ -531,7 +519,7 @@
       border: 1px solid var(--aqua);
     }
 
-    
+    /* ===== SEASONAL OFFERS ===== */
     .seasonal-section {
       background: linear-gradient(135deg, rgba(0, 170, 136, 0.2) 0%, rgba(0, 102, 204, 0.2) 100%);
       padding: 60px 20px;
@@ -603,7 +591,7 @@
       box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4);
     }
 
-    
+    /* ===== THEME SELECTOR ===== */
     .theme-buttons {
       display: flex;
       justify-content: center;
@@ -636,7 +624,7 @@
       box-shadow: 0 6px 20px rgba(0, 212, 255, 0.3);
     }
 
-    
+    /* ===== LIGHTBOX ===== */
     .lightbox {
       display: none;
       position: fixed;
@@ -674,7 +662,7 @@
       color: var(--aqua);
     }
 
-   
+    /* ===== GALLERY ===== */
     .mosaic-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -701,7 +689,7 @@
       transform: scale(1.15) rotate(2deg);
     }
 
-   
+    /* ===== LOYALTY PROGRAM ===== */
     .loyalty-badge {
       width: 100px;
       height: 100px;
@@ -746,7 +734,7 @@
       transition: width 0.3s ease;
     }
 
-    
+    /* ===== FOOTER ===== */
     footer {
       background: linear-gradient(135deg, rgba(0, 26, 46, 0.95), rgba(0, 102, 204, 0.1));
       border-top: 1px solid rgba(0, 212, 255, 0.3);
@@ -792,35 +780,15 @@
       color: var(--text-muted);
     }
 
-    
+    /* ===== CHART STYLES ===== */
     .chart-container {
       background: rgba(0, 212, 255, 0.05);
       border: 1px solid rgba(0, 212, 255, 0.2);
       border-radius: 12px;
       padding: 1.5rem;
     }
-.map-dot {
-  cursor: pointer;
-  transition: all 0.3s ease;
-  filter: drop-shadow(0 0 6px rgba(0, 212, 255, 0.5));
-  animation: pulse 2.5s infinite;
-}
 
-.map-dot:hover {
-  r: 12;
-  fill: var(--green);
-  filter: drop-shadow(0 0 12px rgba(0, 221, 153, 0.9));
-  animation: glow 2s infinite;
-}
-
-#mapTooltip {
-  pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.2s ease;
-  white-space: nowrap;
-  opacity: 0;
-}
-
-  
+    /* ===== PACKAGE CARDS ===== */
     .package-card {
       background: rgba(0, 212, 255, 0.05);
       border: 2px solid rgba(0, 212, 255, 0.3);
@@ -874,7 +842,7 @@
       border-bottom: 1px solid rgba(0, 212, 255, 0.1);
     }
 
-  
+    /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {
       .hero-title {
         font-size: 48px;
@@ -899,7 +867,7 @@
 <body>
   <div class="progress-bar" id="progressBar"></div>
 
-  
+  <!-- NAVBAR -->
   <nav class="sticky-nav">
     <div class="nav-container">
       <div class="logo">✈️ Wanderlust</div>
@@ -917,7 +885,7 @@
     </div>
   </nav>
 
- 
+  <!-- HERO SECTION -->
   <section class="hero-section">
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -936,7 +904,7 @@
     </div>
   </section>
 
-  
+ <!-- POPULAR DESTINATIONS -->
   <section class="section" id="destinations">
     <h2 class="section-title">Popular Destinations</h2>
     <div class="cards-grid">
@@ -964,106 +932,85 @@
     </div>
   </section>
 
-  
-<section class="section" id="experiences">
+  <!-- TOP EXPERIENCES -->
+<section id="experiences" style="padding: 80px 20px; text-align: center; background: linear-gradient(135deg, rgba(0, 9, 18, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);">
   <h2 class="section-title">Top Experiences</h2>
-  
   <div class="cards-grid">
 
-    <div class="glass-card">
-      <div class="experience-icon">🦁</div>
-      <h3>Safari in Kenya</h3>
-      <p>Witness the great migration and majestic wildlife</p>
-      <span class="badge">Adventure</span>
+    <!-- Kenya Safari -->
+    <div class="offer-card" style="overflow: hidden; cursor: pointer;">
+      <img src="images/safari.jpg" alt="Safari in Kenya" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+      <span class="offer-badge">Adventure</span>
+      <h3 style="color: var(--aqua); font-size: 24px;">Safari in Kenya</h3>
+      <p style="color: var(--text-muted); margin: 1rem 0;">Witness the great migration and majestic wildlife</p>
+      <button class="book-btn">Explore Now</button>
     </div>
 
-    <div class="glass-card">
-      <div class="experience-icon">🍜</div>
-      <h3>Street Food in Bangkok</h3>
-      <p>Taste authentic Thai cuisine from local vendors</p>
-      <span class="badge">Culinary</span>
+    <!-- Bangkok Street Food -->
+    <div class="offer-card" style="overflow: hidden; cursor: pointer;">
+      <img src="images/bangok.jpg" alt="Street Food in Bangkok" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+      <span class="offer-badge">Culinary</span>
+      <h3 style="color: var(--aqua); font-size: 24px;">Street Food in Bangkok</h3>
+      <p style="color: var(--text-muted); margin: 1rem 0;">Taste authentic Thai cuisine from local vendors</p>
+      <button class="book-btn">Explore Now</button>
     </div>
 
-    <div class="glass-card">
-      <div class="experience-icon">⛷️</div>
-      <h3>Ski Japan</h3>
-      <p>Experience world-class powder in Hokkaido</p>
-      <span class="badge">Winter Sports</span>
+    <!-- Ski in Japan -->
+    <div class="offer-card" style="overflow: hidden; cursor: pointer;">
+      <img src="images/ski.webp" alt="Ski Japan" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+      <span class="offer-badge">Winter Sports</span>
+      <h3 style="color: var(--aqua); font-size: 24px;">Ski Japan</h3>
+      <p style="color: var(--text-muted); margin: 1rem 0;">Experience world-class powder in Hokkaido</p>
+      <button class="book-btn">Explore Now</button>
     </div>
 
   </div>
 </section>
 
 
- 
-  <section class="seasonal-section">
-    <div class="seasonal-content">
-      <h2 class="section-title" id="seasonalTitle">Seasonal Travel Deals</h2>
-      <div class="cards-grid">
-        <div class="offer-card">
-          <span class="offer-badge">50% OFF</span>
-          <h3 style="color: var(--aqua); font-size: 24px;">Summer in Greece</h3>
-          <p style="color: var(--text-muted); margin: 1rem 0;">Island hopping package with flights & hotels</p>
-          <div class="countdown">23:45:12</div>
-          <button class="book-btn">Book Now</button>
-        </div>
-        <div class="offer-card">
-          <span class="offer-badge">30% OFF</span>
-          <h3 style="color: var(--aqua); font-size: 24px;">Winter in Iceland</h3>
-          <p style="color: var(--text-muted); margin: 1rem 0;">Northern lights tour with luxury accommodation</p>
-          <div class="countdown">15:22:08</div>
-          <button class="book-btn">Book Now</button>
-        </div>
-        <div class="offer-card">
-          <span class="offer-badge">40% OFF</span>
-          <h3 style="color: var(--aqua); font-size: 24px;">Spring in Japan</h3>
-          <p style="color: var(--text-muted); margin: 1rem 0;">Cherry blossom season cultural experience</p>
-          <div class="countdown">48:12:35</div>
-          <button class="book-btn">Book Now</button>
-        </div>
+  <!-- SEASONAL OFFERS -->
+  <!-- SEASONAL OFFERS -->
+<section class="seasonal-section">
+  <div class="seasonal-content">
+    <h2 class="section-title" id="seasonalTitle">Seasonal Travel Deals</h2>
+    <div class="cards-grid">
+
+      <!-- Greece -->
+      <div class="offer-card" style="overflow: hidden; cursor: pointer;">
+        <img src="images/greece.jpg" alt="Summer in Greece" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+        <span class="offer-badge">50% OFF</span>
+        <h3 style="color: var(--aqua); font-size: 24px;">Summer in Greece</h3>
+        <p style="color: var(--text-muted); margin: 1rem 0;">Island hopping package with flights & hotels</p>
+        <div class="countdown">23:45:12</div>
+        <button class="book-btn">Book Now</button>
       </div>
-    </div>
-  </section>
-<section id="explore-world" class="py-20" style="background: linear-gradient(135deg, rgba(0, 26, 46, 0.7), rgba(0, 102, 204, 0.2));">
-  <div class="section text-center">
-    <h2 class="section-title mb-12">Explore the World</h2>
 
-    <div class="glass-card mx-auto p-6 relative w-[600px] h-[300px]">
-      <svg viewBox="0 0 1000 500" class="w-full h-full">
-        <rect fill="rgba(0, 26, 46, 0.8)" width="1000" height="500" />
+      <!-- Iceland -->
+      <div class="offer-card" style="overflow: hidden; cursor: pointer;">
+        <img src="images/iceland.webp" alt="Winter in Iceland" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+        <span class="offer-badge">30% OFF</span>
+        <h3 style="color: var(--aqua); font-size: 24px;">Winter in Iceland</h3>
+        <p style="color: var(--text-muted); margin: 1rem 0;">Northern lights tour with luxury accommodation</p>
+        <div class="countdown">15:22:08</div>
+        <button class="book-btn">Book Now</button>
+      </div>
 
-        <circle cx="200" cy="150" r="8" fill="var(--aqua)" class="map-dot" data-location="Paris">
-          <title>Paris - From $1,299</title>
-        </circle>
+      <!-- Japan -->
+      <div class="offer-card" style="overflow: hidden; cursor: pointer;">
+        <img src="images/japan.avif" alt="Spring in Japan" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+        <span class="offer-badge">40% OFF</span>
+        <h3 style="color: var(--aqua); font-size: 24px;">Spring in Japan</h3>
+        <p style="color: var(--text-muted); margin: 1rem 0;">Cherry blossom season cultural experience</p>
+        <div class="countdown">48:12:35</div>
+        <button class="book-btn">Book Now</button>
+      </div>
 
-        <circle cx="450" cy="200" r="8" fill="var(--aqua)" class="map-dot" data-location="Dubai">
-          <title>Dubai - From $999</title>
-        </circle>
-
-        <circle cx="650" cy="180" r="8" fill="var(--aqua)" class="map-dot" data-location="Tokyo">
-          <title>Tokyo - From $1,499</title>
-        </circle>
-
-        <circle cx="150" cy="300" r="8" fill="var(--aqua)" class="map-dot" data-location="Rio">
-          <title>Rio - From $1,199</title>
-        </circle>
-
-        <circle cx="800" cy="250" r="8" fill="var(--aqua)" class="map-dot" data-location="Sydney">
-          <title>Sydney - From $1,799</title>
-        </circle>
-
-        <text x="500" y="250" text-anchor="middle" fill="#ffffff" font-size="20" opacity="0.3">
-          Click destinations to explore
-        </text>
-      </svg>
-
-      <div id="mapTooltip" class="absolute bg-[#001a2e] border border-[var(--aqua)] text-white px-3 py-2 rounded-lg hidden text-sm shadow-lg" 
-           style="box-shadow: 0 0 20px rgba(0,212,255,0.3);"></div>
     </div>
   </div>
 </section>
 
- 
+
+  <!-- TRAVEL MOODS -->
   <section class="section">
     <h2 class="section-title">Find Your Travel Mood</h2>
     <div class="theme-buttons">
@@ -1093,8 +1040,8 @@
     </div>
   </section>
 
-  
-  <section class="section">
+   <!-- CULTURAL HIGHLIGHTS -->
+  <section style="padding: 60px 20px; text-align: center; background: linear-gradient(135deg, rgba(0, 9, 18, 0.2) 0%, rgba(2, 93, 75, 0.2) 100%);">
     <h2 class="section-title">Cultural Highlights</h2>
     <div class="cards-grid">
       <div class="glass-card" style="overflow: hidden;">
@@ -1110,9 +1057,11 @@
     </div>
   </section>
 
- <section style="padding: 60px 20px; position: relative; background: linear-gradient(135deg, rgba(0, 102, 204, 0.3) 0%, rgba(0, 170, 136, 0.2) 100%); overflow: hidden; text-align: center;">
+
+  <!-- <CHANGE> FEEL THE JOURNEY SECTION - Added from old file -->
+  <section style="padding: 60px 20px; position: relative; background: linear-gradient(135deg, rgba(54, 137, 220, 0.3) 0%, rgba(8, 176, 143, 0.2) 100%); overflow: hidden; text-align: center;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at top right, rgba(0, 212, 255, 0.1) 0%, transparent 60%);"></div>
-    <div style="position: relative; z-1; max-width: 800px; margin: 0 auto;">
+    <div style="position: relative; max-width: 800px; margin: 0 auto;">
       <div class="glass-card" style="padding: 3rem; text-align: center;">
         <div style="font-size: 64px; margin-bottom: 1rem;">🎬</div>
         <h2 style="font-size: 48px; font-weight: 800; margin-bottom: 1rem; background: linear-gradient(135deg, var(--aqua), var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Feel the Journey</h2>
@@ -1122,27 +1071,38 @@
     </div>
   </section>
 
- 
+  <!-- PHOTO GALLERY -->
   <section class="section">
     <h2 class="section-title">Travel Gallery</h2>
     <div class="mosaic-grid">
-      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/gallery-beach.jpg" alt="Beach"></div>
-      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/gallery-mountains.jpg" alt="Mountains"></div>
-      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/gallery-city.jpg" alt="City"></div>
-      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/gallery-nature.jpg" alt="Nature"></div>
-      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/gallery-architecture.jpg" alt="Architecture"></div>
-      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/gallery-food.jpg" alt="Food"></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="images/gallery-beach.jpg" alt="Beach">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="images/gallery-mountains.jpg" alt="Mountains">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="images/gallery-city.jpg" alt="City">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="images/gallery-nature.jpg" alt="Nature">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="images/gallery-architecture.jpg" alt="Architecture">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="images/gallery-food.jpg" alt="Food">
+      </div>
     </div>
   </section>
 
-
- 
+  <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
     <button class="close-lightbox" onclick="closeLightbox()">×</button>
     <img id="lightboxImage" alt="Gallery image" style="max-width: 90%; max-height: 90%; border-radius: 10px;">
   </div>
 
-  
+  <!-- BUILD YOUR TRIP -->
   <section class="section" id="plan">
     <h2 class="section-title">Build Your Perfect Trip</h2>
     <div class="glass-card">
@@ -1191,7 +1151,8 @@
     </div>
   </section>
 
- <section class="section">
+  <!-- <CHANGE> BEST TIME TO BOOK SECTION - Added from old file -->
+  <section class="section">
     <h2 class="section-title">Best Time to Book</h2>
     <div class="chart-container">
       <h3 style="font-size: 24px; color: var(--aqua); margin-bottom: 1.5rem;">Average Prices to Bali Throughout the Year</h3>
@@ -1217,7 +1178,8 @@
     </div>
   </section>
 
- <section class="section">
+  <!-- <CHANGE> PACKAGE COMPARISON SECTION - Added from old file -->
+   <section style="padding: 60px 20px; text-align: center; background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 19, 15, 0.2) 100%);">
     <h2 class="section-title">Choose Your Package</h2>
     <div class="cards-grid">
       <div class="package-card">
@@ -1261,6 +1223,7 @@
     </div>
   </section>
 
+  <!-- LOYALTY PROGRAM -->
   <section class="section">
     <h2 class="section-title">Wanderlust Rewards</h2>
     <div class="glass-card">
@@ -1296,7 +1259,8 @@
     </div>
   </section>
 
-  <section class="section">
+  <!-- <CHANGE> TRAVELERS' COMMUNITY SECTION - Added from old file -->
+  <section style="padding: 60px 20px; text-align: center; background: linear-gradient(135deg, rgba(0, 9, 18, 0.2) 0%, rgba(2, 93, 75, 0.2) 100%);">
     <h2 class="section-title">Travelers' Community</h2>
     <div class="glass-card">
       <svg viewBox="0 0 1000 300" style="width: 100%; height: auto; margin-bottom: 2rem;">
@@ -1339,7 +1303,7 @@
       </div>
     </div>
   </section>
-
+<!-- AI TRAVEL ASSISTANT -->
 <section class="section" id="ai-assistant">
   <h2 class="section-title">AI Travel Assistant</h2>
 
@@ -1354,9 +1318,8 @@
       </div>
 
       <div class="chat-row right">
-        <div class="avatar user">👤</div>
+         <div class="avatar user">👤</div>
         <div class="message glass-card-inner user">
-           
           <p>I want a beach vacation in Southeast Asia</p>
         </div>
        
@@ -1378,7 +1341,7 @@
   </div>
 </section>
 
-
+<!-- TESTIMONIALS -->
 <section class="section" id="testimonials">
   <h2 class="section-title">What Travelers Say</h2>
 
@@ -1418,11 +1381,12 @@
   </div>
 </section>
 
+  <!-- <CHANGE> TRAVELER STORIES SECTION - Added from old file -->
   <section class="section">
     <h2 class="section-title">Traveler Stories</h2>
     <div style="display: grid; gap: 3rem;">
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
-        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 400'%3E%3Cdefs%3E%3ClinearGradient id='story1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2306b6d4'/%3E%3Cstop offset='100%25' style='stop-color:%2310b981'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23story1)' width='500' height='400'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='120' fill='white' text-anchor='middle' dominant-baseline='middle'%3E🌴%3C/text%3E%3C/svg%3E" alt="Story" style="border-radius: 16px; width: 100%; animation: slideInLeft 0.8s ease-out;">
+        <img src="images/bali.jpg" alt="Story" style="border-radius: 16px; width: 100%; animation: slideInLeft 0.8s ease-out;">
         <div>
           <h3 style="font-size: 32px; font-weight: 700; margin-bottom: 1rem; color: var(--aqua);">Finding Peace in Bali</h3>
           <p style="font-size: 18px; color: var(--text-muted); margin-bottom: 1rem; line-height: 1.8;">After years of corporate stress, I took a solo trip to Bali. The yoga retreats, rice terraces, and warm locals transformed my life. I found not just a destination, but a new perspective.</p>
@@ -1435,28 +1399,29 @@
           <p style="font-size: 18px; color: var(--text-muted); margin-bottom: 1rem; line-height: 1.8;">Our kids still talk about the Northern Lights and glacier hiking. Iceland gave us memories that will last a lifetime. Wanderlust made it all possible and stress-free.</p>
           <p style="font-weight: 600; color: var(--aqua);">- The Rodriguez Family</p>
         </div>
-        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 400'%3E%3Cdefs%3E%3ClinearGradient id='story2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%233b82f6'/%3E%3Cstop offset='100%25' style='stop-color:%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23story2)' width='500' height='400'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='120' fill='white' text-anchor='middle' dominant-baseline='middle'%3E❄️%3C/text%3E%3C/svg%3E" alt="Story" style="border-radius: 16px; width: 100%; order: 1; animation: slideInRight 0.8s ease-out;">
+        <img src="images/iceland.webp" alt="Story" style="border-radius: 16px; width: 100%; order: 1; animation: slideInRight 0.8s ease-out;">
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <!-- <CHANGE> TRAVEL GUIDES & TIPS SECTION - Added from old file -->
+  <section style="padding: 60px 20px; text-align: center; background: linear-gradient(135deg, rgba(0, 9, 18, 0.2) 0%, rgba(2, 93, 75, 0.2) 100%);">
     <h2 class="section-title">Travel Guides & Tips</h2>
     <div class="cards-grid">
       <div class="glass-card" style="overflow: hidden; cursor: pointer;">
-        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Cdefs%3E%3ClinearGradient id='blog1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2306b6d4'/%3E%3Cstop offset='100%25' style='stop-color:%2310b981'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23blog1)' width='400' height='250'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='64' fill='white' text-anchor='middle' dominant-baseline='middle'%3E🏖️%3C/text%3E%3C/svg%3E" alt="Blog" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+        <img src="images/beach.webp" alt="Blog" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
         <span class="badge">Beach Guide</span>
         <h3 style="font-size: 20px; font-weight: 700; margin: 1rem 0; color: var(--aqua);">Top 10 Hidden Beaches in Southeast Asia</h3>
         <p style="font-size: 14px; color: var(--text-muted);">Discover pristine shores away from tourist crowds</p>
       </div>
       <div class="glass-card" style="overflow: hidden; cursor: pointer;">
-        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Cdefs%3E%3ClinearGradient id='blog2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23f59e0b'/%3E%3Cstop offset='100%25' style='stop-color:%23dc2626'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23blog2)' width='400' height='250'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='64' fill='white' text-anchor='middle' dominant-baseline='middle'%3E🍜%3C/text%3E%3C/svg%3E" alt="Blog" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+        <img src="images/food.webp" alt="Blog" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
         <span class="badge">Food Guide</span>
         <h3 style="font-size: 20px; font-weight: 700; margin: 1rem 0; color: var(--aqua);">Street Food Adventures: Bangkok Edition</h3>
         <p style="font-size: 14px; color: var(--text-muted);">Must-try dishes and where to find them</p>
       </div>
       <div class="glass-card" style="overflow: hidden; cursor: pointer;">
-        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Cdefs%3E%3ClinearGradient id='blog3' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%238b5cf6'/%3E%3Cstop offset='100%25' style='stop-color:%23ec4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23blog3)' width='400' height='250'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='64' fill='white' text-anchor='middle' dominant-baseline='middle'%3E💼%3C/text%3E%3C/svg%3E" alt="Blog" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+        <img src="images/solo.jpg" alt="Blog" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
         <span class="badge">Travel Tips</span>
         <h3 style="font-size: 20px; font-weight: 700; margin: 1rem 0; color: var(--aqua);">Solo Travel Safety: Complete Guide</h3>
         <p style="font-size: 14px; color: var(--text-muted);">Essential tips for traveling alone with confidence</p>
@@ -1464,7 +1429,8 @@
     </div>
   </section>
 
-<section class="section">
+  <!-- <CHANGE> PARTNER LOGOS SECTION - Added from old file -->
+  <section class="section">
     <h2 class="section-title" style="color: var(--text-muted); font-size: 24px;">Trusted Partners</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 2rem; align-items: center; opacity: 0.6; text-align: center;">
       <div style="font-size: 48px;">✈️</div>
@@ -1475,6 +1441,7 @@
     </div>
   </section>
 
+  <!-- <CHANGE> AWARDS & CERTIFICATIONS SECTION - Added from old file -->
   <section class="section">
     <h2 class="section-title">Awards & Recognition</h2>
     <div class="cards-grid">
@@ -1496,6 +1463,7 @@
     </div>
   </section>
 
+  <!-- <CHANGE> SAFETY & TRAVEL POLICY SECTION - Added from old file -->
   <section class="section">
     <h2 class="section-title">Your Safety Matters</h2>
     <div class="cards-grid">
@@ -1522,7 +1490,8 @@
     </div>
   </section>
 
- <section style="padding: 60px 20px; text-align: center; background: linear-gradient(135deg, rgba(0, 102, 204, 0.2) 0%, rgba(0, 170, 136, 0.2) 100%);">
+  <!-- <CHANGE> REFERRAL PROGRAM SECTION - Added from old file -->
+  <section style="padding: 60px 20px; text-align: center; background: linear-gradient(135deg, rgba(7, 82, 156, 0.2) 0%, rgba(11, 204, 165, 0.2) 100%);">
     <div style="max-width: 800px; margin: 0 auto;">
       <h2 style="font-size: 48px; font-weight: 800; margin-bottom: 1rem; background: linear-gradient(135deg, var(--aqua), var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Share Your Journey, Earn Credits</h2>
       <p style="font-size: 20px; color: var(--text-muted); margin-bottom: 2rem;">Invite friends and get $50 credit for each booking. They get $50 too!</p>
@@ -1537,7 +1506,8 @@
     </div>
   </section>
 
-  <section class="section">
+  <!-- TESTIMONIALS -->
+  <section style="padding: 60px 20px; text-align: center; background: linear-gradient(135deg, rgba(0, 9, 18, 0.2) 0%, rgba(2, 93, 75, 0.2) 100%);">
     <h2 class="section-title" id="testimonialTitle">What Travelers Say</h2>
     <div class="cards-grid">
       <div class="glass-card">
@@ -1572,20 +1542,20 @@
       </div>
     </div>
   </section>
-
-  <section style="padding: 80px 20px; position: relative; background: linear-gradient(135deg, rgba(0, 102, 204, 0.3) 0%, rgba(0, 26, 46, 0.8) 100%), url('images/final-cta.jpg') center/cover;">
+<!-- FINAL CTA -->
+  <section style="padding: 80px 20px; position: relative; background: url('images/final-cta.jpg') center/cover; overflow: hidden; text-align: center;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(0, 26, 46, 0.3) 0%, rgba(0, 26, 46, 0.8) 100%);"></div>
     <div style="position: relative; z-index: 1; max-width: 800px; margin: 0 auto;">
-      <h2 id="finalCtaTitle" style="font-size: 60px; font-weight: 800; margin-bottom: 1rem; background: linear-gradient(135deg, var(--aqua), var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Your next adventure awaits</h2>
-      <p style="font-size: 20px; color: var(--text-muted); margin-bottom: 2rem;">Join thousands of travelers discovering the world with Wanderlust</p>
-      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <button id="finalCtaButton" class="book-btn" style="padding: 15px 40px; font-size: 16px; background: linear-gradient(135deg, var(--aqua), var(--green)); color: #001a2e;">Start Planning</button>
-        <button style="padding: 15px 40px; font-size: 16px; background: transparent; border: 2px solid var(--aqua); color: var(--aqua); border-radius: 8px; cursor: pointer; font-weight: 700;">Download App</button>
+      <h2 id="finalCtaTitle" style="font-size: 60px; font-weight: 800; margin-bottom: 1rem; animation: slideInDown 0.8s ease-out; background: linear-gradient(135deg, var(--aqua), var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Your next adventure awaits</h2>
+      <p style="font-size: 20px; color: var(--text-muted); margin-bottom: 2rem; animation: slideInUp 0.8s ease-out 0.2s backwards;">Join thousands of travelers discovering the world with Wanderlust</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; animation: slideInUp 0.8s ease-out 0.3s backwards;">
+        <button id="finalCtaButton" class="book-btn" style="padding: 15px 40px; font-size: 16px; background: linear-gradient(135deg, var(--aqua), var(--green)); color: #001a2e; box-shadow: 0 8px 30px rgba(0, 212, 255, 0.4);">Start Planning</button>
+        <button style="padding: 15px 40px; font-size: 16px; background: transparent; border: 2px solid var(--aqua); color: var(--aqua); border-radius: 8px; cursor: pointer; font-weight: 700; transition: all 0.3s ease;">Download App</button>
       </div>
     </div>
   </section>
 
- 
+  <!-- FOOTER -->
   <footer>
     <div class="footer-grid">
       <div class="footer-section">
@@ -1665,7 +1635,7 @@
         mapToCapabilities: () => ({ recolorables: [], borderables: [] }),
         mapToEditPanelValues: (config) => new Map([
           ["hero_title", config.hero_title || defaultConfig.hero_title],
-          ["hero_cta", config.hero_cta || defaultConfig.hero_cta],
+          ["hero_cta", config.hero_ || defaultConfig.hero_cta],
           ["seasonal_title", config.seasonal_title || defaultConfig.seasonal_title],
           ["testimonial_title", config.testimonial_title || defaultConfig.testimonial_title],
           ["final_cta_title", config.final_cta_title || defaultConfig.final_cta_title],
@@ -1724,27 +1694,4 @@
     function updateCountdowns() {
       document.querySelectorAll('.countdown').forEach(timer => {
         const [h, m, s] = timer.textContent.split(':').map(Number);
-        let sec = s - 1;
-        let min = m;
-        let hour = h;
-        
-        if (sec < 0) { sec = 59; min--; }
-        if (min < 0) { min = 59; hour--; }
-        if (hour < 0) hour = 23;
-        
-        timer.textContent = `${String(hour).padStart(2, '0')}:${String(min).padStart(2, '0')}:${String(sec).padStart(2, '0')}`;
-      });
-    }
-
-    setInterval(updateCountdowns, 1000);
-
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = document.querySelector(a.getAttribute('href'));
-        if (target) target.scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
-</body>
-</html>
+        le
